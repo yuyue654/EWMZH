@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>免费二维码生成器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>免费二维码生成器</h1>
+        <p>输入文本或网址，一键生成二维码</p>
+
+        <div class="input-group">
+            <input type="text" id="qr-text" placeholder="请输入文本或网址...">
+            <button onclick="generateQRCode()">生成二维码</button>
+        </div>
+
+        <div id="qrcode"></div> <!-- 二维码将在这里显示 -->
+
+        <div class="download-group" id="download-group" style="display: none;">
+            <button onclick="downloadQRCode()">下载二维码</button>
+        </div>
+    </div>    </div> <!-- 这是原来就有的 .container 结束标签 -->
+
+    <!-- 下面是新增的页脚和链接 -->
+    <footer style="text-align: center; margin-top: 30px; padding: 20px; color: #666;">
+        <a href="terms.html" style="color: #666; text-decoration: none; margin: 0 10px;">服务条款</a> 
+        | 
+        <a href="privacy.html" style="color: #666; text-decoration: none; margin: 0 10px;">隐私政策</a>
+    </footer>
+</body> <!-- 这是原来就有的body结束标签 -->
+</html> <!-- 这是原来就有的html结束标签 -->
+
+    <!-- 引入 QRCode.js 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.1/build/qrcode.min.js"></script>
+    <!-- 引入我们自己的JS文件 -->
+    <script src="script.js"></script>
+</body>
+</html>
